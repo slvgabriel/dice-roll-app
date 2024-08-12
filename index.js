@@ -12,7 +12,7 @@ function rollDice() {
         document.getElementById("numOfDice").value = 20;
         return;
     } else if (numOfDice == 0) {
-        window.alert("You need to select the correct amount!");
+        window.alert("You need to select a valid amount!");
         return;
     } 
 
