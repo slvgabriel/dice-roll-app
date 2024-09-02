@@ -11,7 +11,7 @@ function rollDice() {
         window.alert("You can roll up to 20 dices only!");
         document.getElementById("numOfDice").value = 20;
         return;
-    } else if (numOfDice == 0) {
+    } else if (numOfDice <= 0) {
         window.alert("You need to select a valid amount!");
         return;
     } 
