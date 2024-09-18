@@ -5,6 +5,7 @@ function rollDice() {
     const diceImgs = document.getElementById("diceImgs");
     const values = [];
     const images = [];
+    const resultText = numOfDice > 1 ? "results are" : "result is";
 
     //
     if (numOfDice > 20) {
@@ -25,7 +26,7 @@ function rollDice() {
     }
     
     // display results
-    diceResults.textContent = `The results are: ${values.join(', ')}`;
+    diceResults.textContent = `The ${resultText}: ${values.join(', ')}`;
     diceImgs.innerHTML = images.join("");
     
     // rename button after first roll
